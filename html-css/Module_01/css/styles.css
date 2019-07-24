@@ -16,7 +16,7 @@ body {
   color: rgb(98, 98, 98);
 }
 
-.head,
+.header,
 .allcontent {
   width: 900px;
   margin: 0 auto;
@@ -25,11 +25,11 @@ body {
 img {
   display: block;
   max-width: 100%;
-  padding: auto;
 }
 
 .header {
-  padding: 75px 103px;
+  width: 900px;
+  padding: 75px;
 }
 
 .navigation {
@@ -108,5 +108,9 @@ img {
   padding: 20px 35px;
   background-color: white;
   position: relative;
-  margin: 0 auto;
+  margin: 70 auto;
 }
+
+/* .button {
+  margin: 0px 0px 60px 0px;
+} */
