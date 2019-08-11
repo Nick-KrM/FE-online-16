@@ -1,73 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 * ::before,
 ::after {
   box-sizing: inherit;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
-ul > li {
+
+nav > ul > li {
   list-style-type: none;
-  display: inline;
+  /* display: inline; */
 }
+
 .clearfix::after {
   display: table;
   content: "";
   clear: both;
 }
+
 body {
   width: 1110px;
   margin: 0 auto;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-style: normal;
 }
+
 .container {
   padding-top: 38px;
-  margin-bottom: 100px;
 }
+
 h1 {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 300;
   line-height: 32px;
 }
+
 .logo {
   color: rgb(85, 82, 82);
   float: left;
 }
+
 .logo::first-letter {
   color: rgb(26, 188, 156);
   font-weight: 900;
 }
+
 nav > ul > li {
   font-size: 14px;
   line-height: 32px;
 }
+
 .site_nav {
   float: right;
 }
 .menu-item {
+  float: left;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   color: black;
 }
+
 .menu-item {
   margin-right: 26px;
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.menu-item-link:hover,
+.menu-item-link:focus {
   color: rgb(26, 188, 156);
 }
+
 .menu-item:last-child {
   margin-right: 0px;
 }
+
 h2 {
   color: rgb(81, 81, 81);
   font-family: "Roboto", sans-serif;
@@ -78,6 +95,7 @@ h2 {
   text-align: center;
   margin-bottom: 130px;
 }
+
 h2::after {
   display: block;
   content: "";
@@ -87,35 +105,59 @@ h2::after {
   height: 7px;
   background-color: rgb(26, 188, 156);
 }
+
 h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 40px;
 }
 
 /* Catalog */
 
+.products {
+  padding: 100px 0;
+}
+
 .catalog-item img {
   display: block;
   background-color: rgb(233, 240, 253);
 }
+
 .catalog-item {
   float: left;
+  /* list-style: none; */
+  list-style-type: none;
   width: 255px;
+  height: 322px;
 }
+
 .catalog-item:not(:nth-of-type(4n)) {
   margin-right: 30px;
 }
+
 .catalog-item {
   margin-bottom: 30px;
 }
 
+.catalog-item a {
+  color: rgb(255, 255, 255);
+}
+
+.item_info {
+  display: block;
+  height: 40px;
+  /* width: 255px; */
+  background-color: rgb(50, 50, 50);
+}
+
 .item_name {
   float: left;
-  width: 200px;
+  /* width: 200px; */
   height: 40px;
-  background-color: rgb(50, 50, 50);
+  /* background-color: rgb(50, 50, 50); */
   padding-left: 13px;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   text-transform: uppercase;
 }
 
@@ -129,30 +171,35 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  background-color: rgb(140, 140, 140);
+  background-color: rgba(255, 255, 255, 0.44);
 }
-.item_info:hover {
+
+.catalog-item:hover .item_info {
   background-color: rgb(25, 188, 155);
-}
-ul > li > .item_info {
-  color: white;
 }
 
 /* News */
+
+.news_articles {
+  padding-bottom: 82px;
+}
 
 .news-list {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
+
 .news-block {
   float: left;
   width: 350px;
   padding: 0;
 }
+
 .news-block:not(:last-child) {
   margin-right: 30px;
 }
+
 .news-title {
   font-size: 16px;
   font-weight: 600;
@@ -160,6 +207,7 @@ ul > li > .item_info {
   font-family: "Open Sans", "Arial", sans-serif;
   color: rgb(85, 82, 82);
 }
+
 .news-title::after {
   display: block;
   width: 138px;
@@ -171,6 +219,7 @@ ul > li > .item_info {
   margin-bottom: 20px;
   margin-left: 0px;
 }
+
 p {
   font-size: 14px;
   font-weight: 400;
@@ -182,10 +231,12 @@ p {
   width: auto;
   margin-bottom: 20px;
 }
+
 .button {
-  display: inline-block;
-  width: 160px;
-  height: 52px;
+  /* display: inline-block; */
+  /* width: 160px;
+  height: 52px; */
+  padding: 17px 43px;
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
@@ -197,4 +248,12 @@ p {
   color: rgb(255, 255, 255);
   background-color: rgb(26, 188, 156);
   margin-bottom: 46px;
+}
+
+.button:hover {
+  color: rgb(26, 188, 156);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(26, 188, 156);
+  border-radius: 5px;
+  padding: 15px 41px;
 }
