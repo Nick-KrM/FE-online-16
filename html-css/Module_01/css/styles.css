@@ -103,7 +103,7 @@ img {
   border-color: rgb(70, 70, 70);
   padding: 20px 35px;
   background-color: white;
-  position: relative;
+  /* position: relative; */
   margin: 0 auto;
   cursor: pointer;
 }
