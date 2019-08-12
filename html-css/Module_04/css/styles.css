@@ -49,6 +49,8 @@ h1 {
 .logo {
   color: rgb(85, 82, 82);
   float: left;
+  display: block;
+  margin: 0px;
 }
 
 .logo::first-letter {
@@ -126,10 +128,9 @@ h3 {
 
 .catalog-item {
   float: left;
-  /* list-style: none; */
   list-style-type: none;
   width: 255px;
-  height: 322px;
+  /* height: 322px; */
 }
 
 .catalog-item:not(:nth-of-type(4n)) {
@@ -137,7 +138,7 @@ h3 {
 }
 
 .catalog-item {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .catalog-item a {
