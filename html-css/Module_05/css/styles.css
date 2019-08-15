@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* ::before,
+::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  width: 1110px;
+  margin: 0 auto;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  padding-top: 38px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.logo {
+  color: rgb(85, 82, 82);
+  float: left;
+  display: block;
+  margin: 0px;
+}
+
+.logo::first-letter {
+  color: rgb(26, 188, 156);
+  font-weight: 900;
+}
+
+nav > ul > li {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.site_nav {
+  float: right;
+}
+.menu-item {
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: black;
+}
+
+.menu-item {
+  margin-right: 26px;
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: rgb(26, 188, 156);
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
+}
+
+h2 {
+  color: rgb(81, 81, 81);
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+h2::after {
+  display: block;
+  content: "";
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+}
