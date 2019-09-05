@@ -33,7 +33,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -77,13 +76,20 @@ ul li {
 .header_inner {
   display: flex;
   justify-content: space-between;
-  align-items: bottom;
   padding-top: 28px;
 }
 
 /* Navigation */
 
-.nav {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 28vw;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 25px;
@@ -96,7 +102,6 @@ ul li {
   text-decoration: none;
   display: inline-block;
   vertical-align: bottom;
-  margin-right: 56px;
   color: rgb(149, 225, 211);
   transition: 0.2s linear;
 }
@@ -125,11 +130,40 @@ ul li {
 
 /* Section of services */
 
+.services_item:nth-child(n+1) {
+  background-repeat: no-repeat;
+  background-position: 25px 5px;
+}
+
+.ico-alarm {
+  background-image: url(../images/servisico1.png);
+}
+
+.ico-book {
+  background-image: url(../images/servisico2.png);
+}
+
+.ico-pc {
+  background-image: url(../images/servisico3.png);
+}
+
+.ico-home {
+  background-image: url(../images/servisico4.png);
+}
+
+.ico-img {
+  background-image: url(../images/servisico5.png);
+}
+
+.ico-line {
+  background-image: url(../images/servisico6.png);
+}
+
 .section {
   padding-top: 60px;
 }
 
-.section_header {
+.section_top {
   margin-bottom: 100px;
 }
 
@@ -185,7 +219,7 @@ span {
   color: #999;
 }
 
-.section_header:after {
+.section_top:after {
   display: block;
   background-color: #f38181;
   content: "";
@@ -198,7 +232,7 @@ span {
   transform: translateX(-50%);
 }
 
-.section_header:hover::after {
+.section_top:hover::after {
   width: 280px;
 }
 
@@ -231,7 +265,7 @@ span {
 
 .team_list_img {
   position: relative;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .team_list_card:hover .overlay {
@@ -258,6 +292,14 @@ span {
   display: flex;
 }
 
+.team_list_title {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .team_list_position {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -267,18 +309,22 @@ span {
   line-height: 24px;
 }
 
+.overlay_block {
+  position: relative;
+}
+
 .team_list_card .overlay {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  bottom: 70px;
+  bottom: 0;
 }
 
 .overlay-list {
   display: none;
-  width: 224px;
-  height: 56px;
+  /* width: 224px;
+  height: 56px; */
   background-color: rgb(252, 227, 138);
 }
 
@@ -319,7 +365,7 @@ span {
 }
 
 .footer_text {
-  color: #999;
+  color: rgb(51, 51, 51);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin-right: 3px;
@@ -343,6 +389,9 @@ span {
   padding: 11px 9px;
   border: 1px solid rgb(231, 231, 231);
   border-right-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
 }
 
 .button {
