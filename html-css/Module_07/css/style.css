@@ -124,20 +124,19 @@ ul li {
 .header_inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 42px 0;
 }
 
 /* Navigation */
 
 .navigation {
-  display: flex;
-  align-items: center;
+  width: 470px;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
-  width: 25vw;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 25px;
@@ -151,10 +150,6 @@ ul li {
   vertical-align: bottom;
   color: rgb(34, 34, 34);
   transition: 0.2s linear;
-}
-
-.nav-link {
-  padding-right: 5px;
 }
 
 .nav-link:hover {
@@ -235,7 +230,6 @@ ul li {
 /* <!-- Section for communication --> */
 
 .communication {
-  max-width: 1400px;
   background-color: rgb(34, 34, 34);
   margin: 0 auto;
   padding-bottom: 110px;
@@ -256,6 +250,7 @@ ul li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: space-between;
   max-height: 210px;
   height: 100%;
   margin-bottom: 30px;
