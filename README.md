@@ -9,3 +9,9 @@
 Ссылка на Модуль-7: https://nick-krm.github.io/goit-fe-course/html-css/Module_07/index.html
 
 Ссылка на Модуль-8: https://nick-krm.github.io/goit-fe-course/html-css/Module_08/index.html
+
+Ссылка на Модуль-9: https://nick-krm.github.io/goit-fe-course/html-css/Module_09/index.html
+
+Ссылка на Модуль-10: https://nick-krm.github.io/goit-fe-course/html-css/Module_10/index.html
+
+Ссылка на Модуль-11: https://nick-krm.github.io/goit-fe-course/html-css/Module_11/index.html
