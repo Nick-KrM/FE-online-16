@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: 1.6;
+  color: $main-font-color;
+}
+
+.text {
+  font-family: $secondary-font;
+  line-height: 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  @extend %title;
+  color: $darkgray-color;
+}

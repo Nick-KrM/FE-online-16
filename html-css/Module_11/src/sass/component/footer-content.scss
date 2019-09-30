@@ -1,0 +1,40 @@
+.footer__wrap {
+  display: flex;
+}
+
+.footer__text {
+  color: $darkgray-color;
+  font-size: $secondary-font-size;
+  margin-right: 5px;
+}
+
+.footer__link {
+  color: $pink-color;
+  font-weight: 700;
+}
+
+.footer__form {
+  display: flex;
+  outline: 1px solid $litegray-color;
+}
+
+.footer__form input {
+  width: 211px;
+  padding: 11px 9px;
+  border: 1px solid $litegray-color;
+  font-family: $secondary-font;
+  font-size: $main-font-size;
+  font-style: italic;
+}
+
+.footer__button {
+  color: $white-color;
+  background-color: $mint-color;
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: 8px 33px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

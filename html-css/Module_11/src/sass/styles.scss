@@ -1,0 +1,29 @@
+/*
+   Import partials below
+*/
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins.scss';
+@import 'abstracts/placeholders';
+
+// Base
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/main';
+
+// Component
+@import 'component/link';
+@import 'component/list';
+@import 'component/container';
+@import 'component/page-header';
+@import 'component/head-navigation';
+@import 'component/banner';
+@import 'component/services.scss';
+@import 'component/team-section';
+@import 'component/footer-content';
+
+// Layout
+@import 'layout/header';
+@import 'layout/section';
+@import 'layout/footer';

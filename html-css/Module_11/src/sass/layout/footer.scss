@@ -1,0 +1,5 @@
+.footer-container {
+  @extend %space-between;
+  padding: 12px 0;
+  border-top: 1px solid $litegray-color;
+}

@@ -1,0 +1,29 @@
+%title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+}
+
+%space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%item-center {
+  display: flex;
+  align-items: center;
+}
+
+%center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

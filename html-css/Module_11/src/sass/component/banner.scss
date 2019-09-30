@@ -1,0 +1,75 @@
+.banner {
+  position: relative;
+  background: url('../images/background-min.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1000px;
+  margin-bottom: 50px;
+}
+
+.banner::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: linear-gradient(
+    $linear-gradient-pink,
+    $linear-gradient-yellow
+  );
+  width: 100%;
+  min-height: 1000px;
+  z-index: 1;
+}
+
+.banner-content {
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.banner-content__title {
+  font-weight: 800;
+  color: $white-color;
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 140px;
+  margin-bottom: 65px;
+}
+
+.banner-content__title--italic {
+  display: block;
+  font-family: $special-font;
+  font-size: 72px;
+  text-transform: capitalize;
+}
+
+.banner__btn {
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  padding: 10px 30px;
+  border: 3px solid $white-color;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.banner__btn:hover {
+  color: $pink-color;
+  border-color: $pink-color;
+  background-image: linear-gradient(
+    to top right,
+    $linear-gradient-yellow + 20% 0%,
+    $linear-gradient-pink + 50% 100%
+  );
+  transition: 0.2s linear;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .page-banner {
+    background: no-repeat url('../images/background@2x-min.png') center;
+    background-size: 1920px 1000px;
+  }
+}

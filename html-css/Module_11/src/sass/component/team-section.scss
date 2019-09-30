@@ -1,0 +1,108 @@
+.team__description {
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.team__list {
+  @extend %space-between;
+}
+
+.team__item {
+  @extend %flex-column;
+  position: relative;
+  width: 380px;
+  top: 0;
+  left: 0;
+}
+
+.team__item:hover .overlay {
+  transform: translate(-10px, -10px);
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  background-image: linear-gradient(
+    to top,
+    $linear-gradient-yellow 0%,
+    $linear-gradient-pink 100%
+  );
+  box-shadow: 10px 10px 0px 0px $mint-color;
+}
+
+.team__item:hover .team__img {
+  display: block;
+  position: relative;
+  transform: translate(-10px, -10px);
+  transition: transform 0.2s linear;
+}
+
+.team__item:hover .overlay-list {
+  @extend %item-center;
+}
+
+.team__item-name {
+  font-size: $secondary-font-size;
+  text-transform: uppercase;
+  color: $darkgray-color;
+}
+
+.team__item-occupation {
+  font-family: $secondary-font;
+  font-style: italic;
+}
+
+.overlay_wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  @extend %center-center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-list {
+  display: none;
+  background-color: $yellow-color;
+  background-image: linear-gradient(
+    to bottom,
+    $linear-gradient-pink + 20% 0%,
+    $linear-gradient-yellow 100%
+  );
+}
+
+.overlay-item {
+  @extend %center-center;
+  height: 56px;
+  width: 56px;
+  outline: 1px solid $pink-color;
+  z-index: 3;
+}
+
+.overlay-link {
+  @extend %center-center;
+  color: $pink-color;
+  height: 56px;
+  width: 56px;
+}
+
+.overlay-item:hover {
+  background-color: $pink-color;
+  transition: 0.2s linear;
+}
+
+.overlay-item__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: $pink-color - 20%;
+  padding: 14px;
+}
+
+.overlay-item__icon:hover {
+  fill: $white-color;
+}

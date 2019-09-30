@@ -1,0 +1,37 @@
+.page-nav {
+  width: 620px;
+}
+
+.site-nav {
+  @extend %space-between;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.site-nav__link,
+.site-nav__icon {
+  fill: $white-color;
+  color: $white-color;
+}
+
+.site-nav__link::after {
+  background-color: $yellow-color;
+  display: block;
+  content: '';
+  height: 3px;
+  width: 0%;
+  transition: 0.2s linear;
+}
+
+.site-nav__link:hover::after {
+  width: 100%;
+  display: block;
+}
+
+.site-nav__icon:hover {
+  fill: $yellow-color;
+}
+
+.site-nav__link:hover {
+  color: $yellow-color;
+}

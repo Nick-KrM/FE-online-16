@@ -1,0 +1,54 @@
+.section_wrap:after {
+  display: block;
+  background-color: $pink-color;
+  content: '';
+  margin-top: 35px;
+  height: 3px;
+  width: 5%;
+  left: 50%;
+  position: absolute;
+  transition: width 0.2s linear;
+  transform: translateX(-50%);
+}
+
+.section_wrap:hover::after {
+  width: 280px;
+}
+
+.section__title {
+  line-height: 32px;
+}
+
+.section__title--kaushan {
+  display: block;
+  font-family: $special-font;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 15px;
+}
+
+.services__list {
+  @extend %space-between;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  @extend %space-between;
+  width: 360px;
+}
+
+.item__content {
+  width: 300px;
+}
+
+.item__icon {
+  fill: $mint-color;
+}
+
+.item__heading {
+  margin-bottom: 18px;
+  font-size: $secondary-font-size;
+  color: $darkgray-color;
+  text-transform: uppercase;
+}
