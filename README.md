@@ -14,4 +14,4 @@
 
 Ссылка на Модуль-10: https://nick-krm.github.io/goit-fe-course/html-css/Module_10/index.html
 
-Ссылка на Модуль-11: https://nick-krm.github.io/goit-fe-course/html-css/Module_11/index.html
+Ссылка на Модуль-11: https://nick-krm.github.io/goit-fe-course/html-css/Module_11/build/index.html
